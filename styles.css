@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/background.svg');
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+h1, h2 {
+    color: white;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.correspondencia-item {
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: hidden; /* Para garantir que a imagem não ultrapasse as bordas */
+}
+
+.correspondencia-item:hover {
+    background-color: whitesmoke;
+}
+
+.imagem-correspondencia {
+    float: left;
+    margin-right: 10px;
+}
+
+.correspondencia-textos {
+    overflow: hidden;
+}
+
+.correspondencia-item p {
+    margin: 5px 0;
+}
+
+.correspondencia-item button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 5px;
+}
+
+.painel {
+    max-height: 450px;
+    overflow-y: auto;
+}

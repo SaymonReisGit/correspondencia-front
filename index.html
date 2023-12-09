@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Correspondências App</title>
+</head>
+<body onload="loadPage()">
+    <header>
+        <h1>Correspondências App</h1>
+    </header>
+
+    <div id="app">
+        <div id="correspondenciaForm">
+            <h3>Formulário de Correspondência</h3>
+
+            <form onsubmit="salvarCorrespondencia()">
+                <label for="remetente">Remetente:</label>
+                <input type="text" id="remetente" required>
+                <label for="destinatario">Destinatário:</label>
+                <input type="text" id="destinatario" required>
+                <label for="conteudo">Conteúdo:</label>
+                <textarea id="conteudo" required></textarea>
+                <button type="submit">Salvar</button>
+                <button type="button" onclick="fecharForm()">Cancelar</button>
+            </form>
+        </div>
+
+        <div id="correspondenciasPainel">
+            <h3>Correspondencias Encontradas:</h3>
+
+            <div>
+                <label for="filtro">Filtrar Correspondências:</label>
+                <input type="text" id="filtro" oninput="filtrarLista(this.value)">
+                <button type="button" onclick="abrirForm()">Nova Correspondência</button>
+            </div>
+
+            <div class="painel" id="listaCorrespondencia">
+            </div>
+        </div>
+    </div>
+    
+    <script src="./scripts.js"></script>
+</body>
+</html>
