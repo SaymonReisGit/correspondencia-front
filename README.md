@@ -31,6 +31,11 @@ O objetivo principal é permitir aos usuários cadastrar, listar, filtrar e excl
   - Cada correspondência na lista possui a opção de exclusão.
   - O usuário pode deletar uma correspondência específica clicando no botão correspondente.
 
+### Como executar 
+
+1. **Executar index.html:**
+    - Para executar o front, basta abrir o arquivo index.htlm em algum navegador compatível, como o google chrome.
+
 ## Possíveis Melhorias
 
 - **Edição:**
